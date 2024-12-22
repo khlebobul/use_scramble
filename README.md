@@ -33,7 +33,7 @@ MIT License
 
 ## Additional information
 
-[Medium article link]()
+[Medium article link](https://medium.com/@khlebobul/scramble-effect-for-text-flutter-widget-d92df44dd7a8)
 
 Created by [Gled](https://khlebobul.github.io/) | khlebobul@gmail.com
 

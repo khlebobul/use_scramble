@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'widgets/text_scramble.dart';
+import 'package:use_scramble/use_scramble.dart';
 
 void main() {
   runApp(const MainApp());

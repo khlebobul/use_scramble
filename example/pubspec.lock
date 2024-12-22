@@ -184,6 +184,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.7.2"
+  use_scramble:
+    dependency: "direct main"
+    description:
+      name: use_scramble
+      sha256: b129fad55335d449929899e82224c6ec8533e85745903dc7e1e4845cd4318731
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.1"
   vector_math:
     dependency: transitive
     description:

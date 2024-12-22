@@ -1,6 +1,6 @@
 <div align="center">
 
-[![pub package](https://img.shields.io/pub/v/gen_art_bg.svg)]() [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Codacy Badge]()
+[![pub package](https://img.shields.io/pub/v/use_scramble.svg)]() [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/50393454533847fb811b82a00f937d16)](https://app.codacy.com/gh/khlebobul/use_scramble/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
 
 ![Use Scramble GIF Demo](https://github.com/khlebobul/use_scramble/raw/main/screenshots/demo.gif)

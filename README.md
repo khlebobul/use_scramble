@@ -3,9 +3,9 @@
 [![pub package](https://img.shields.io/pub/v/gen_art_bg.svg)]() [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Codacy Badge]()
 
 
-![Use Scramble GIF Demo](https://github.com/khlebobul/gen_art_bg/raw/main/screenshots/demo.gif)
+![Use Scramble GIF Demo](https://github.com/khlebobul/use_scramble/raw/main/screenshots/demo.gif)
 
-Lightweight package for random text animations inspired by [use_scramble](https://www.use-scramble.dev)
+Lightweight package for random text animations inspired by [useScramble](https://www.use-scramble.dev)
 
 </div>
 
@@ -39,4 +39,4 @@ Created by [Gled](https://khlebobul.github.io/) | khlebobul@gmail.com
 
 [![X](https://img.shields.io/badge/X-000?style=for-the-badge&logo=x)](https://x.com/khlebobul) [![Telegram](https://img.shields.io/badge/Telegram-000?style=for-the-badge&logo=telegram&logoColor=2CA5E0)](https://t.me/khlebobul)
 
-Inspired by [use_scramble](https://www.use-scramble.dev)
+Inspired by [useScramble](https://www.use-scramble.dev)

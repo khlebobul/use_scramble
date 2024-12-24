@@ -16,8 +16,8 @@ TextScramble(
             text: 'Hello World!',
             speed: Duration(milliseconds: 30),
             chars: '!<>-_\\/[]{}—=+*^?#________',
-            correctCharProbability = 0.1, // Correct character probability in [0, 1]
-            scrambleCycles = 4, // Number of times to scramble the text
+            correctCharProbability: 0.1, // Correct character probability in [0, 1]
+            scrambleCycles: 4, // Number of times to scramble the text
             style: TextStyle(
               fontSize: 40,
               color: Colors.black,

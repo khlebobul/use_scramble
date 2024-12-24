@@ -188,10 +188,10 @@ packages:
     dependency: "direct main"
     description:
       name: use_scramble
-      sha256: b129fad55335d449929899e82224c6ec8533e85745903dc7e1e4845cd4318731
+      sha256: "23993cdeaca0739f9d6349dfd6c1e98564740d3444f5d2a4d7ab253a4b2d6f1b"
       url: "https://pub.dev"
     source: hosted
-    version: "0.0.1"
+    version: "0.0.4"
   vector_math:
     dependency: transitive
     description:

@@ -1,6 +1,6 @@
 name: use_scramble
 description: "Lightweight package for random text animations inspired by useScramble"
-version: 0.0.3
+version: 0.0.4
 homepage: https://github.com/khlebobul/use_scramble
 
 environment:

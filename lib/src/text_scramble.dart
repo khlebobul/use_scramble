@@ -7,6 +7,8 @@ class TextScramble extends StatefulWidget {
   final Duration speed;
   final String chars;
   final TextStyle? style;
+  final double correctCharProbability; // Correct character probability in [0, 1]
+  final int scrambleCycles; // Number of times to scramble the text
 
   const TextScramble({
     super.key,
@@ -14,6 +16,8 @@ class TextScramble extends StatefulWidget {
     this.speed = const Duration(milliseconds: 50),
     this.chars = '!<>-_\\/[]{}—=+*^?#________',
     this.style,
+    this.correctCharProbability = 0.1,
+    this.scrambleCycles = 4,
   });
 
   @override
@@ -38,7 +42,7 @@ class _TextScrambleState extends State<TextScramble> {
     int counter = 0;
     _timer = Timer.periodic(widget.speed, (timer) {
       // Check if it's time to end the animation
-      if (counter >= widget.text.length * 4) {
+      if (counter >= widget.text.length * widget.scrambleCycles) {
         timer.cancel();
         setState(() {
           _displayText = widget.text;
@@ -52,7 +56,7 @@ class _TextScrambleState extends State<TextScramble> {
           if (_done[index]) return widget.text[index];
 
           // With a 10% probability, set the correct character
-          if (_random.nextDouble() < 0.1) {
+          if (_random.nextDouble() < widget.correctCharProbability) {
             _done[index] = true;
             return widget.text[index];
           }

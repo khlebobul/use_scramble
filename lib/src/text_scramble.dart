@@ -7,7 +7,8 @@ class TextScramble extends StatefulWidget {
   final Duration speed;
   final String chars;
   final TextStyle? style;
-  final double correctCharProbability; // Correct character probability in [0, 1]
+  final double
+      correctCharProbability; // Correct character probability in [0, 1]
   final int scrambleCycles; // Number of times to scramble the text
 
   const TextScramble({

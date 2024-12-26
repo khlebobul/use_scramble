@@ -41,4 +41,8 @@ Created by [Gled](https://khlebobul.github.io/) | khlebobul@gmail.com
 
 [![X](https://img.shields.io/badge/X-000?style=for-the-badge&logo=x)](https://x.com/khlebobul) [![Telegram](https://img.shields.io/badge/Telegram-000?style=for-the-badge&logo=telegram&logoColor=2CA5E0)](https://t.me/khlebobul)
 
+Support the project:
+- [Telegram Stars](https://t.me/khlebobul_dev)
+- [YooMoney](https://yoomoney.ru/to/4100118234947004)
+
 Inspired by [useScramble](https://www.use-scramble.dev)

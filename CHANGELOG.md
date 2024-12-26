@@ -1,3 +1,7 @@
+## 0.0.6
+
+* Add support options
+
 ## 0.0.5
 
 * Update example

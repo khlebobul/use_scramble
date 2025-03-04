@@ -13,16 +13,18 @@ Lightweight package for random text animations inspired by [useScramble](https:/
 
 ```dart
 TextScramble(
-            text: 'Hello World!',
-            speed: Duration(milliseconds: 30),
-            chars: '!<>-_\\/[]{}—=+*^?#________',
-            correctCharProbability: 0.1, // Correct character probability in [0, 1]
-            scrambleCycles: 4, // Number of times to scramble the text
-            style: TextStyle(
-              fontSize: 40,
-              color: Colors.black,
-            ),
-          ),
+    text: 'Hello World!',
+    speed: Duration(milliseconds: 50),
+    chars: '!<>-_\\/[]{}—=+*^?#________',
+    correctCharProbability: 0.1, // Correct character probability in [0, 1]
+    scrambleCycles: 4, // Number of times to scramble the text
+    textAlign: TextAlign.center, // Optional text alignment
+    style: TextStyle(
+            fontSize: 40,
+            color: Colors.green,
+            fontFamily: 'JetBrainsMono',
+    ),
+),
 ```
 
 ## Bugs/Requests

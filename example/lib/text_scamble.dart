@@ -2,16 +2,34 @@ import 'package:flutter/material.dart';
 import 'dart:math';
 import 'dart:async';
 
+/// A Flutter widget that displays text with a "hacker-style" scramble effect.
+/// The text gradually reveals itself over several animation cycles, starting
+/// as random characters and resolving into the target text.
 class TextScramble extends StatefulWidget {
+  /// The final text to display after the animation completes.
   final String text;
-  final Duration speed;
-  final String chars;
-  final TextStyle? style;
-  final double
-      correctCharProbability; // Correct character probability in [0, 1]
-  final int scrambleCycles; // Number of times to scramble the text
-  final TextAlign? textAlign; // Optional text alignment
 
+  /// Speed of each frame update during the scrambling animation.
+  /// Defaults to 50 milliseconds.
+  final Duration speed;
+
+  /// Characters to use for random scrambled characters.
+  final String chars;
+
+  /// Optional text style to apply to the displayed text.
+  final TextStyle? style;
+
+  /// Probability (between 0 and 1) that each character will be revealed
+  /// correctly on each frame.
+  final double correctCharProbability;
+
+  /// Number of full scramble cycles before the final text is displayed.
+  final int scrambleCycles;
+
+  /// Optional text alignment for the displayed text.
+  final TextAlign? textAlign;
+
+  /// Creates a `TextScramble` widget.
   const TextScramble({
     super.key,
     required this.text,
@@ -27,6 +45,8 @@ class TextScramble extends StatefulWidget {
   State<TextScramble> createState() => _TextScrambleState();
 }
 
+/// State class for the `TextScramble` widget.
+/// Handles the animation and random character generation.
 class _TextScrambleState extends State<TextScramble> {
   late String _displayText;
   final Random _random = Random();
@@ -41,10 +61,10 @@ class _TextScrambleState extends State<TextScramble> {
     _startScramble();
   }
 
+  /// Starts the text scrambling animation.
   void _startScramble() {
     int counter = 0;
     _timer = Timer.periodic(widget.speed, (timer) {
-      // Check if it's time to end the animation
       if (counter >= widget.text.length * widget.scrambleCycles) {
         timer.cancel();
         setState(() {
@@ -55,16 +75,11 @@ class _TextScrambleState extends State<TextScramble> {
 
       setState(() {
         _displayText = List.generate(widget.text.length, (index) {
-          // If the character is already set, return it
           if (_done[index]) return widget.text[index];
-
-          // With a 10% probability, set the correct character
           if (_random.nextDouble() < widget.correctCharProbability) {
             _done[index] = true;
             return widget.text[index];
           }
-
-          // Otherwise, return a random character
           return widget.chars[_random.nextInt(widget.chars.length)];
         }).join();
       });

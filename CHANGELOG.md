@@ -1,3 +1,8 @@
+## 0.0.8
+
+* Update example
+* Update documentation
+
 ## 0.0.7
 
 * Add `textAlign` parameter

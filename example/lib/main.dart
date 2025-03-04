@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:use_scramble/use_scramble.dart';
+
+import 'text_scamble.dart';
 
 void main() {
   runApp(const MainApp());
@@ -22,6 +23,7 @@ class MainApp extends StatelessWidget {
             correctCharProbability:
                 0.1, // Correct character probability in [0, 1]
             scrambleCycles: 4, // Number of times to scramble the text
+            textAlign: TextAlign.center, // Optional text alignment
             style: TextStyle(
               fontSize: 40,
               color: Colors.green,

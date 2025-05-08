@@ -9,6 +9,12 @@ Lightweight package for random text animations inspired by [useScramble](https:/
 
 </div>
 
+## Used by:
+
+- [Board Buddy](https://boardbuddyapp.vercel.app/)
+  - [AppStore](https://apps.apple.com/ru/app/board-buddy-score-counter/id6743980638?)
+  - [Google Play](https://play.google.com/store/apps/details?id=com.khlebobul.board_buddy)
+
 ## Usage
 
 ```dart

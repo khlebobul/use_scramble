@@ -11,24 +11,28 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.black,
         body: Center(
           child: TextScramble(
             text: 'Hello World!',
-            speed: Duration(milliseconds: 50),
+            speed: const Duration(milliseconds: 50),
             chars: '!<>-_\\/[]{}—=+*^?#________',
-            correctCharProbability:
-                0.1, // Correct character probability in [0, 1]
-            scrambleCycles: 4, // Number of times to scramble the text
-            textAlign: TextAlign.center, // Optional text alignment
-            style: TextStyle(
-              fontSize: 40,
-              color: Colors.green,
-              fontFamily: 'JetBrainsMono',
-            ),
+            correctCharProbability: 0.1,
+            scrambleCycles: 4,
+            builder: (context, scrambledText) {
+              return Text(
+                scrambledText,
+                textAlign: TextAlign.center, // textAlign is now part of the builder
+                style: const TextStyle( // style is now part of the builder
+                  fontSize: 40,
+                  color: Colors.green,
+                  fontFamily: 'JetBrainsMono',
+                ),
+              );
+            },
           ),
         ),
       ),

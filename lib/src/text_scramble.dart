@@ -16,9 +16,6 @@ class TextScramble extends StatefulWidget {
   /// Characters to use for random scrambled characters.
   final String chars;
 
-  /// Optional text style to apply to the displayed text.
-  final TextStyle? style;
-
   /// Probability (between 0 and 1) that each character will be revealed
   /// correctly on each frame.
   final double correctCharProbability;
@@ -26,19 +23,19 @@ class TextScramble extends StatefulWidget {
   /// Number of full scramble cycles before the final text is displayed.
   final int scrambleCycles;
 
-  /// Optional text alignment for the displayed text.
-  final TextAlign? textAlign;
+  /// A builder function that takes the BuildContext and the current
+  /// scrambled text (String) and returns a Widget.
+  final Widget Function(BuildContext, String) builder;
 
   /// Creates a `TextScramble` widget.
   const TextScramble({
     super.key,
     required this.text,
+    required this.builder,
     this.speed = const Duration(milliseconds: 50),
     this.chars = '!<>-_\\/[]{}—=+*^?#________',
-    this.style,
     this.correctCharProbability = 0.1,
     this.scrambleCycles = 4,
-    this.textAlign,
   });
 
   @override
@@ -96,10 +93,6 @@ class _TextScrambleState extends State<TextScramble> {
 
   @override
   Widget build(BuildContext context) {
-    return Text(
-      _displayText,
-      style: widget.style,
-      textAlign: widget.textAlign,
-    );
+    return widget.builder(context, _displayText);
   }
 }

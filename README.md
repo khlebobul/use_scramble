@@ -24,12 +24,18 @@ TextScramble(
     chars: '!<>-_\\/[]{}—=+*^?#________',
     correctCharProbability: 0.1, // Correct character probability in [0, 1]
     scrambleCycles: 4, // Number of times to scramble the text
-    textAlign: TextAlign.center, // Optional text alignment
-    style: TextStyle(
-            fontSize: 40,
-            color: Colors.green,
-            fontFamily: 'JetBrainsMono',
-    ),
+    builder: (context, scrambledText) {
+      // Use the builder to define how the text is displayed
+      return Text(
+        scrambledText,
+        textAlign: TextAlign.center, // Text alignment is now within the builder
+        style: TextStyle( // Text style is now within the builder
+          fontSize: 40,
+          color: Colors.green,
+          fontFamily: 'JetBrainsMono',
+        ),
+      );
+    },
 ),
 ```
 

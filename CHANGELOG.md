@@ -1,3 +1,9 @@
+## 0.0.10
+
+- Refactored the `TextScramble` widget:
+    - Removed the `style` and `textAlign` properties.
+    - Added a required `builder: (BuildContext, String) => Widget` property. This allows users to define their own rendering logic for the displayed text, providing greater flexibility in customizing its appearance. Text styling and alignment should now be implemented within the `builder` function.
+
 ## 0.0.9
 
 * Add "Used by" section

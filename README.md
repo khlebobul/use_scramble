@@ -51,7 +51,7 @@ MIT License
 
 [Medium article link](https://medium.com/@khlebobul/scramble-effect-for-text-flutter-widget-d92df44dd7a8)
 
-Created by [Gled](https://khlebobul.github.io/) | khlebobul@gmail.com
+Created by [Gleb](https://khlebobul.github.io/) | khlebobul@gmail.com
 
 [![X](https://img.shields.io/badge/X-000?style=for-the-badge&logo=x)](https://x.com/khlebobul) [![Telegram](https://img.shields.io/badge/Telegram-000?style=for-the-badge&logo=telegram&logoColor=2CA5E0)](https://t.me/khlebobul)
 

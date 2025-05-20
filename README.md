@@ -59,4 +59,7 @@ Support the project:
 - [Telegram Stars](https://t.me/khlebobul_dev)
 - [YooMoney](https://yoomoney.ru/to/4100118234947004)
 
-Inspired by [useScramble](https://www.use-scramble.dev)
+## Credits
+
+- Inspired by [useScramble](https://www.use-scramble.dev)
+- Thanks eibaan for the [recommendations](https://www.reddit.com/r/FlutterDev/comments/1kq8s99/comment/mt493hk/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
